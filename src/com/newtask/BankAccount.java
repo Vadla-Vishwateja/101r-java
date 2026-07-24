@@ -31,7 +31,7 @@ public class BankAccount {
 		System.out.println("Balance After Deposit: "+getBalance());
 	}
 	public void withdraw(double amount) {
-		if(balance>=amount) {
+		if((balance>=amount) && (amount>0)) {
 			balance=balance-amount;
 			System.out.println("Withdraw Successful .");
 

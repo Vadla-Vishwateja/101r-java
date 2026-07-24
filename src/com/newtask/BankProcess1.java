@@ -5,7 +5,13 @@ public class BankProcess1 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		BankAccount b1=new BankAccount(1113,"Vadla Vishwateja",50000);
+		System.out.print("Enter Bank Account Number :");
+		int ano=s.nextInt();
+		System.out.print("Enter Bank Account Holder Name :");
+		String name=s.next();
+		System.out.print("Enter Bank Account Balance :");
+		double bal=s.nextDouble();
+		BankAccount b1=new BankAccount(ano,name,bal);
 		System.out.println("Bank Account Details : ");
 		System.out.println("Account Number : "+b1.getAccountNumber());
 		System.out.println("Account Holder Name :"+b1.getAccountHolder());
