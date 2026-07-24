@@ -3,7 +3,7 @@ package com.newtask;
 public class EmployeeProcessor {
 
 	public static void main(String[] args) {
-		Employee e1=new Employee(1001,"Vishwateja","Software Developer",50000,5);
+		Employee e1=new Employee(1001,"Vishwateja","Software Developer",50000,4);
 		
 		System.out.println("Employee details before Promotion : ");
 		System.out.println("Employee ID : "+e1.getEmpid());
@@ -12,7 +12,8 @@ public class EmployeeProcessor {
 		System.out.println("Salary : " +e1.getSalary());
 		System.out.println("Performance : "+e1.getPerformanceRating());
 		
-		e1.promoteEmployee();
+		String des="Senior Software Developer .";
+		e1.promoteEmployee(des);
 		if(e1.getPerformanceRating()>=4) {
 			System.out.println("After Promotion ");
 			System.out.println("New Designation :" +e1.getDesignation());

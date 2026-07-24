@@ -15,7 +15,6 @@ public class Employee {
 	}
 	public int getEmpid() {
 		return empid;
-
 	}
 	public String getName() {
 		return name;
@@ -23,15 +22,12 @@ public class Employee {
 	public String getDesignation() {
 		return designation;
 	}
-	
 	public double getSalary() {
 		return salary;
 	}
-	
 	public int getPerformanceRating() {
 		return performanceRating;
 	}
-	
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
@@ -39,12 +35,11 @@ public class Employee {
 		this.designation = designation;
 	}
 	
-	public void promoteEmployee() {
+	public void promoteEmployee(String designation) {
 		if(performanceRating >=4) {
 			double n=salary+(salary*.2);
 			setSalary(n);
-			setDesignation("Senior Developer Updated");
-		}
-		
+			setDesignation(designation);
+		}	
 	}
 }
