@@ -32,8 +32,7 @@ public class BankProcess {
 				b1.withdraw(amt);
 			}else if(c==2) {
 				System.out.print("\nEnter your deposit amount : ");
-				double amt=sc.nextDouble();
-				b1.deposit(amt);
+				b1.deposit(sc.nextDouble());
 			}else if(c==3) {
 				b1.showBalance();
 			}else if(c==4) {
@@ -44,5 +43,4 @@ public class BankProcess {
 		}while(c!=4);
 		sc.close();
 	}
-
 }
