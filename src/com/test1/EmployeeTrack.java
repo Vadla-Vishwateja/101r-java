@@ -86,7 +86,7 @@ public class EmployeeTrack {
 		
 		int choice=0;
 		do {
-			System.out.print("--- Menu ---\r\n"
+			System.out.println("--- Menu ---\r\n"
 					+ "1. Add Sales\r\n"
 					+ "2. Recalculate Result\r\n"
 					+ "3. View Summary\r\n"
