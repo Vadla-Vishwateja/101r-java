@@ -20,7 +20,7 @@ public class ArraySum {
 			arr[i]=sc.nextInt();
 		}
 		sumOfArr(arr,n);
-		sc.close();
+		sc.close();         
 
 	}
 
