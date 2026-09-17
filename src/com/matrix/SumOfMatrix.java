@@ -2,7 +2,7 @@ package com.matrix;
 
 import java.util.Scanner;
 
-public class Example1 {
+public class SumOfMatrix {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -25,16 +25,17 @@ public class Example1 {
 		
 		
 		System.out.println("\n\nMatrix :\n");
+		int sum=0;
 		
 		for(int i=0;i<r;i++) {
 			for(int j=0;j<c;j++) {
 				System.out.print(arr[i][j]+" ");
+				sum+=arr[i][j];
 			}
 			System.out.println();
 		}
 				
-//		System.out.println(arr.length);
-//		System.out.println(arr[0].length);		
+		System.out.println("Sum of Elements of the matrix : "+sum);
 		s.close();
 	}
 
