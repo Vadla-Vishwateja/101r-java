@@ -21,6 +21,10 @@ public class MapEx2 {
 		
 		System.out.println(student.keySet());
 		
+		for(String key : student.keySet()) {
+			System.out.println(key + " : "+student.get(key));
+		}
+		
 	}
 
 }
