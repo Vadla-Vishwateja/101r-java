@@ -23,8 +23,6 @@ public class MapEx2 {
 		
 		for(String key : student.keySet()) {
 			System.out.println(key + " : "+student.get(key));
-		}
-		
+		}		
 	}
-
 }
