@@ -18,6 +18,8 @@ public class MapEx1 {
 		student.put("Kru", 99);
 		
 		System.out.println(student);
+		
+		System.out.println(student.get("sai"));
 	}
 
 }
